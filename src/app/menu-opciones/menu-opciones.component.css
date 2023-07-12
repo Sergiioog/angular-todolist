@@ -1,0 +1,97 @@
+#menuOpciones{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#tareas{
+    font-size: small;
+    margin-right: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 89, 0);
+    font-weight: 600;
+    cursor: pointer;
+}
+#documentacion{
+    font-size: 12px;
+    color: rgb(255, 89, 0);
+    font-weight: 600;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+#estado{
+    font-size: small;
+    margin-left: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 89, 0);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 425px) and  (max-width: 1024px){
+    #menuOpciones{
+        width: 100%;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #tareas{
+        font-size: large;
+        margin-right: 10px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(255, 89, 0);
+        font-weight: 600;
+        cursor: pointer;
+    }
+    #documentacion{
+        font-size: large;
+        color: rgb(255, 89, 0);
+        font-weight: 600;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        cursor: pointer;
+    }
+    #estado{
+        font-size: large;
+        margin-left: 10px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(255, 89, 0);
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    #menuOpciones{
+        width: 100%;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    #tareas{
+        font-size: x-large;
+        margin-right: 10px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(255, 89, 0);
+        font-weight: 600;
+        cursor: pointer;
+    }
+    #documentacion{
+        font-size: x-large;
+        color: rgb(255, 89, 0);
+        font-weight: 600;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        cursor: pointer;
+    }
+    #estado{
+        font-size: x-large;
+        margin-left: 10px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(255, 89, 0);
+        font-weight: 600;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,47 @@
+<div id="misTareas">
+  <div id="tituloDiv">
+    <img src="assets/images/circuloblanco.webp" id="imagen" >
+    <p id="tareas">MIS TAREAS</p>
+  </div>
+  <div id="divBotones">
+    <button id="botonCrear" (click)="ponTarea()">AÑADIR</button>
+    <button id="botonEliminar" (click)="eliminarTareas()">ELIMINAR</button>
+  </div>
+
+  <div id="descripcion">
+    <p id="vaya" *ngIf="vayaDisp">¡Vaya!, está todo muy tranquilo por aquí...</p>
+
+    <div id="tarea" *ngFor="let tarea of tareas; index as i" >
+      <div id="titulo">
+        <input type="text" id="tituloCab" [(ngModel)]="tarea.titulo">
+        <input type="checkbox" id="check" [(ngModel)]="tarea.eliminada">
+      </div>
+      
+
+      <div id="tareaCabecera">
+        <div id="tiempo">
+          <input type="date" id="fecha" [(ngModel)]="tarea.fecha">
+          <input type="time" id="hora" [(ngModel)]="tarea.hora">
+        </div>
+      </div>
+      
+      <div id="selec">
+        <select id="seleccion" [(ngModel)]="tarea.estado">
+          <option value="porHacer">POR HACER</option>
+          <option value="enProceso">EN PROCESO</option>
+          <option value="terminado">TERMINADO</option>
+        </select>
+      </div>
+
+      <div id="idInput">
+        <!--Con Rows = 5 le decimos el numero de lineas que queremos que tenga el input (para que haya saltos de)-->
+        <textarea placeholder="Info Extra" id="input" rows="5" [(ngModel)]="tarea.infoExtra"></textarea>
+        <br> 
+        <button type="button" id="botonGuardar" (click)="guardarTarea(tarea)">GUARDAR</button>
+      </div>
+      
+      
+      
+    </div>
+  </div>
+</div>
